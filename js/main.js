@@ -34,7 +34,7 @@
   // Paste the Google Apps Script Web App URL here to log inquiries to the Sheet.
   // (Step-by-step in GOOGLE-SHEETS-SETUP.md.) Until set, inquiries open a
   // pre-filled email as a safe fallback so nothing is ever lost.
-  const LEAD_ENDPOINT = "";
+  const LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbyfkT6ud3dkiyi8EwxkaZcaJ76eyiVfFFG7H36Kpg8V9r4k3rsPGN786lRYtHR0Hvr7/exec";
   const FALLBACK_EMAIL = "idobyliv@idobyliv.com";
 
   const form = document.querySelector(".inquiry-form");
