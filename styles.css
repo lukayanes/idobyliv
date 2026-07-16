@@ -217,6 +217,22 @@ section{ padding: clamp(70px, 9vw, 130px) 0; }
 .quote p{ font-family: var(--serif); font-size: clamp(24px, 3vw, 38px); line-height: 1.35; font-weight: 300; }
 .quote cite{ display:block; margin-top: 24px; font-style: normal; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--clay-deep); }
 
+/* ---------- Special offer band ---------- */
+.offer-inner{ display: flex; align-items: center; justify-content: center; gap: clamp(30px, 6vw, 80px); }
+.offer-badge{
+  flex: none; width: 190px; height: 190px; border-radius: 50%;
+  border: 1px solid var(--clay); color: var(--clay);
+  display: grid; place-items: center; text-align: center;
+  font-family: var(--serif); font-size: 58px; line-height: 0.9;
+}
+.offer-badge small{ display: block; font-family: var(--sans); font-size: 14px; font-weight: 500; letter-spacing: 0.34em; text-transform: uppercase; margin-top: 10px; }
+.offer-text{ max-width: 520px; }
+.offer-text .eyebrow{ color: var(--clay); }
+@media (max-width: 760px){
+  .offer-inner{ flex-direction: column; text-align: center; }
+  .offer-badge{ width: 150px; height: 150px; font-size: 46px; }
+}
+
 /* ---------- Review cards ---------- */
 .rev-grid{ column-count: 2; column-gap: 26px; max-width: 1000px; margin: 0 auto; }
 .rev-card{
